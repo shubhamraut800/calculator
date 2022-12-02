@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculeter</title>
+    <!-- <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href=" "> -->
+    <style>
+        .nav{
+    /* display: inline-block; */
+    background-color: black;
+    color: red;
+    display: grid;
+    grid-template-columns: 60px 70px 80px 70px;
+    /* padding-left: 20px; */
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    margin: auto auto auto auto ;
+    grid-gap: 30px;
+    padding-top: 10px;
+
+}
+body{
+    background-color: antiquewhite;
+    justify-content: center;
+    margin: 0px 0px auto 0px;
+}
+#home{
+    background-color: black;
+    color: aqua;
+}
+#abot{
+    background-color: black;
+    color: aqua;
+}
+#int{
+    background-color: black;
+    color: aqua;
+}
+#nor{
+    background-color: black;
+    color: aqua;
+}
+nav{
+
+    width: 100%;
+    height: 40px
+}
+#main{
+    height: 350px;
+    width: 300px;
+    padding: 5px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 75px auto auto auto auto;
+    grid-gap: 5px;
+    /* justify-content: center; */
+    position: relative;
+    /* top: 200px;
+    left: 35%; */
+    
+    /* @media screen {
+        
+    } */
+    
+    
+
+    /* grid-column: 15/17 ; */
+}
+#cc{
+    grid-row: 4/6;
+    grid-column:4/5 ;
+    color: aliceblue;
+    background-color: red;
+
+}
+#dis{
+    color: black;
+    grid-column: 1/5;
+    
+    background-color: white;
+    margin: 0%;
+}
+#c-{
+    grid-row: 3/4;
+    grid-column: 4/5;
+}
+#Cl{
+    grid-row: 2/3;
+     grid-column: 4/5;
+} 
+#cd{
+    grid-row: 5/6;
+    grid-column: 3/4;
+}
+#c0{
+    grid-column: 2/3;
+}
+#cp{
+    grid-row: 5/6;
+
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    top: 100px;
+}
+    </style>
+    <script>
+        alert("enter thevalue")
+        let a = prompt("enter a here")
+        #dis.write{}
+    </script>
+</head>
+<body>
+    <header>
+        <nav> 
+            <div class="nav">
+                <!-- <p id="nav_1">HOME</p>
+                <p id="nav_2">ABOUT</p>
+                <p id="nav_3">INTREST</p>
+                <p id="nav_4">NORMAL</p> -->
+                <span id="home" >HOME</span>
+                <span id="abot">ABOUT</span>
+                <span id="int">INTREST</span>
+                <span id="nor">NORMAL</span>
+            </div>
+
+            
+        </nav>
+    </header>
+    <main>
+        <div id="main">
+            <h1 id="dis">000</h1>
+            <button id="c1" class="button">1</button>
+            <button id="c2" class="button">2</button>
+            <button id="c3" class="button">3</button>
+            <button id="c-" class="button">-</button>
+            <button id="c4" class="button">4</button>
+            <button id="c5" class="button">5</button>
+            <button id="c6" class="button">6</button>
+            
+            <button id="c7" class="button">7</button>
+            <button id="c8" class="button">8</button>
+            <button id="c9" class="button">9</button>
+            <button id="cd" class="button">/</button>
+            <button id="c0" class="button">0</button>
+            <button id="cp" class="button">+</button>
+            <button id="Cl" class="button">c</button>
+            <button id="cc" class="button">=</button>
+            <!-- <button id="c00" class="button">00</button>
+            <button id="cm+" class="button">m+</button>
+            <button id="cm-" class="button">0</button> -->
+            <!-- <button id="C*" class="button">*</button> -->
+            <!-- <button id="cc" class="button">=</button> -->
+    
+        </div>
+
+    </main>
+    <!-- <div id="dis">
+        <p>000000000000000</p>
+    </div> -->
+    
+    <script>
+        let string ="";
+let buttons = document.querySelectorAll('.button');
+Array.from(buttons).forEach((button)=>{
+    button.addEventListener('click',(e)=>{
+        console.log(e.target)
+        if(e.target.innerText == "="){
+          string = eval(string);
+        }
+        else if(e.target.innerText == "c")
+        {
+            string = "";
+        }
+        // else if(string = 0)
+        // {
+        //     string = e.target.innerText;
+        // }
+        else{
+            string = string + e.target.innerHTML;
+        }
+
+        document.getElementById("dis").innerText = string;
+        console.log(document.getElementById("dis").innerText)
+    })
+})
+    </script>
+</body>
+</html>

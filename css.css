@@ -1,0 +1,104 @@
+.nav{
+    /* display: inline-block; */
+    background-color: black;
+    color: red;
+    display: grid;
+    grid-template-columns: 60px 70px 80px 70px;
+    /* padding-left: 20px; */
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    margin: auto auto auto auto ;
+    grid-gap: 30px;
+    padding-top: 10px;
+
+}
+body{
+    background-color: antiquewhite;
+    justify-content: center;
+    margin: 0px 0px auto 0px;
+}
+#home{
+    background-color: black;
+    color: aqua;
+}
+#abot{
+    background-color: black;
+    color: aqua;
+}
+#int{
+    background-color: black;
+    color: aqua;
+}
+#nor{
+    background-color: black;
+    color: aqua;
+}
+nav{
+
+    width: 100%;
+    height: 40px
+}
+#main{
+    height: 350px;
+    width: 300px;
+    padding: 5px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 75px auto auto auto auto;
+    grid-gap: 5px;
+    /* justify-content: center; */
+    position: relative;
+    /* top: 200px;
+    left: 35%; */
+    
+    /* @media screen {
+        
+    } */
+    
+    
+
+    /* grid-column: 15/17 ; */
+}
+#cc{
+    grid-row: 4/6;
+    grid-column:4/5 ;
+    color: aliceblue;
+    background-color: red;
+
+}
+#dis{
+    color: black;
+    grid-column: 1/5;
+    
+    background-color: white;
+    margin: 0%;
+}
+#c-{
+    grid-row: 3/4;
+    grid-column: 4/5;
+}
+#Cl{
+    grid-row: 2/3;
+     grid-column: 4/5;
+} 
+#cd{
+    grid-row: 5/6;
+    grid-column: 3/4;
+}
+#c0{
+    grid-column: 2/3;
+}
+#cp{
+    grid-row: 5/6;
+
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    top: 100px;
+}
